@@ -39,8 +39,12 @@ a {
   gap: 10px;
   margin: 10px;
   padding: 10px;
-  box-shadow: 1px 1px 2px 1px black;
+  box-shadow: 1px 1px 2px 1px black, inset 0px 0px black;
   transition-duration: 500ms;
+}
+
+.country-list__item:hover {
+  box-shadow: 0px 0px black, inset 1px 1px 2px 1px black;
 }
 
 .country-list__img {
@@ -49,10 +53,6 @@ a {
 
 .country-info__img {
   box-shadow: 1px 1px 3px 1px black;
-}
-
-.country-list__item:hover {
-  box-shadow: -1px -1px 2px 1px black;
 }
 
 .country-info__container {
